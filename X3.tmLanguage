@@ -34,55 +34,61 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(File|Close|Look|Read|Readlock|Lock|Unlock|Link|Write|Rewrite|Delete|Update|Filter|Choose|Mask|Transmask|Setmok|Fillbox|Leftbox|Setlbox|Dislbox|Pick|Affzo|Envzo|Effzo|Actzo|Diszo|Grizo|Chgfmt|Chgtbk|Chgtzn|Chgtfd|Chgstl|Titcol|Discombo|Columns|Openi|Openo|Openio|Iomode|Getseq|Putseq|Rdseq|Wrseq|Seek|Field|Formula|Report|Default|Assign|Append|Raz|Kill|Insa|Dela|Sorta|Call|Func|Opadxd|Calliu|Funciu|Gosub|Goto|Onerrgo|Onintgo|Onevent|Onkey|Sleep|Inter|Nointer|Case|When|Endcase|If|Elsif|Else|Endif|For|Next|Repeat|Until|While|Wend|Break|Trbegin|Commit|Rollback|Anasql|Execsql|Opldap|Clldap|Srldapbs|Srldaplv|Srldaptr|Nxldap|Askui|Blk|Callilog|Callocx|Callui|Calljs|Dbgaff|Edi|Getui|Infbox|Listimp|Men|Nap|Pikltb|Pokltb|Pmt|Reb|Run|Seldest|Selimp|Send|Setfct|Setlob|Setmdu|System|Enable|Disable|Addmen|Additm|Inftxt|Infimg|Hlpbox|Setmode|Boxact|Boxinp|Inpbox|Mesbox|Errbox|Rptstat|Rptfile|Genws|Genasmx|Convxml|Supli|Selbox|Qstbox|Wrnbox|Endbox|Dbgbox|Opsock|Setstc|Setinstance|Titled|Insli|Saizo|Free|Freeinstance|Setgus|Boxclr|Fmethod|Where|Hint|Using|Order|With|Newstc|Newinstance|Not|First|Last|Curr|Prev|Button|Coded|As|Folder|Listbox|Treebox|Pickbox)\b</string>
+			<string>\b(?i:File|Close|Look|Read|Readlock|Lock|Unlock|Link|Write|Rewrite|Delete|Update|Filter|Choose|Mask|Transmask|Setmok|Fillbox|Leftbox|Setlbox|Dislbox|Pick|Affzo|Envzo|Effzo|Actzo|Diszo|Grizo|Chgfmt|Chgtbk|Chgtzn|Chgtfd|Chgstl|Titcol|Discombo|Columns|Openi|Openo|Openio|Iomode|Getseq|Putseq|Rdseq|Wrseq|Seek|Field|Formula|Report|Default|Assign|Append|Raz|Kill|Insa|Dela|Sorta|Call|Func|Opadxd|Calliu|Funciu|Gosub|Goto|Onerrgo|Onintgo|Onevent|Onkey|Sleep|Inter|Nointer|Case|When|Endcase|If|Elsif|Else|Endif|For|Next|Repeat|Until|While|Wend|Break|Trbegin|Commit|Rollback|Anasql|Execsql|Opldap|Clldap|Srldapbs|Srldaplv|Srldaptr|Nxldap|Askui|Blk|Callilog|Callocx|Callui|Calljs|Dbgaff|Edi|Getui|Infbox|Listimp|Men|Nap|Pikltb|Pokltb|Pmt|Reb|Run|Seldest|Selimp|Send|Setfct|Setlob|Setmdu|System|Enable|Disable|Addmen|Additm|Inftxt|Infimg|Hlpbox|Setmode|Boxact|Boxinp|Inpbox|Mesbox|Errbox|Rptstat|Rptfile|Genws|Genasmx|Convxml|Supli|Selbox|Qstbox|Wrnbox|Endbox|Dbgbox|Opsock|Setstc|Setinstance|Titled|Insli|Saizo|Free|Freeinstance|Setgus|Boxclr|Fmethod|Where|Hint|Using|Order|With|Newstc|Newinstance|Not|First|Last|Curr|Prev|Button|Coded|As|Folder|Listbox|Treebox|Pickbox)\b</string>
 			<key>name</key>
 			<string>keyword.control.x3</string>
 		</dict>	
 		<dict>
 			<key>match</key>
-			<string>\b(Subprog|Funprog|End|Return|Resume)\b</string>
+			<string>\b(?i:From|With|Where|Order|Key|Using|To|Step|Then|Sized|As|Maxrows|Hint|Nohint|At|Sql|Allocgroup|By|Asc|Desc|Lockwait|Starting|Folder|Button|Coded)\b</string>
+			<key>name</key>
+			<string>keyword.control.x3</string>
+		</dict>	
+		<dict>
+			<key>match</key>
+			<string>\b(?i:Subprog|Funprog|End|Return|Resume)\b</string>
 			<key>name</key>
 			<string>storage.type.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(Global|Local|Extern|Value|Variable|Const)\b</string>
+			<string>\b(?i:Global|Local|Extern|Value|Variable|Const)\b</string>
 			<key>name</key>
 			<string>storage.type.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(func|abs|mod|rnd|sgn|sqr|ar2|arr|fix|int|ascii|len|parse|pat|val|day|dayn|month|nday|week|year|anp|cnp|fac|avg|find|max|min|sum|prd|uni|var|sigma|cos|sin|tan|acos|asin|atan|ach|ash|ath|ch|sh|th|exp|ln|log|clalev|clanbs|clasiz|filinfo|filelev|nbrecord|rowcount|uniqid|adxseek|inpmode|varinit|masklev|masknbf|maskrk|masksiz|adxpid|adxtcp|adxuid|dim|errl|errn|errp|freemem|nbruser|time|type|varmode|ctrans|tolower|toupper|vireblc|errm|clanam|clavar|maskabr|maskcou|masknam|adxmac|adxpam|adxpno|filcom|filpath|instr|mess|trtcou|addmonth|aweek|eomonth|evalue|adxcio|adxioa|adxnfs|filecla|filetyp|maskcla|progcan|progldd|progsiz|progusd|pi)\b</string>
+			<string>\b(?i:func|abs|mod|rnd|sgn|sqr|ar2|arr|fix|int|ascii|len|parse|pat|val|day|dayn|month|nday|week|year|anp|cnp|fac|avg|find|max|min|sum|prd|uni|var|sigma|cos|sin|tan|acos|asin|atan|ach|ash|ath|ch|sh|th|exp|ln|log|clalev|clanbs|clasiz|filinfo|filelev|nbrecord|rowcount|uniqid|adxseek|inpmode|varinit|masklev|masknbf|maskrk|masksiz|adxpid|adxtcp|adxuid|dim|errl|errn|errp|freemem|nbruser|time|type|varmode|ctrans|tolower|toupper|vireblc|errm|clanam|clavar|maskabr|maskcou|masknam|adxmac|adxpam|adxpno|filcom|filpath|instr|mess|trtcou|addmonth|aweek|eomonth|evalue|adxcio|adxioa|adxnfs|filecla|filetyp|maskcla|progcan|progldd|progsiz|progusd|pi)\b</string>
 			<key>name</key>
 			<string>entity.name.function.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(chr|graph|space|string|left|mid|right|seg|errmes|cop|day|dir|format|getenv|month|num|time|date|gdat|nday|ver)\$</string>
+			<string>\b(?i:chr|graph|space|string|left|mid|right|seg|errmes|cop|day|dir|format|getenv|month|num|time|date|gdat|nday|ver)\$</string>
 			<key>name</key>
 			<string>entity.name.function.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?&lt;![\.\$])(Char|Date|Decimal|Float|Double|Integer|Libelle|Shortint|Schar|Blbfile|Clbfile|File|Struct|Instance|Mask|Infbox|Inpbox|Mesbox|Dlgbox|Onkey|Onevent)(?!\s*:)\b</string>
+			<string>\b(?&lt;![\.\$])(?i:Char|Date|Decimal|Float|Double|Integer|Libelle|Shortint|Schar|Blbfile|Clbfile|File|Struct|Instance|Mask|Infbox|Inpbox|Mesbox|Dlgbox|Onkey|Onevent)(?!\s*:)\b</string>
 			<key>name</key>
 			<string>storage.type.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\$[A-Z_]+</string>
+			<string>\$[A-Za-z0-9_]+</string>
 			<key>name</key>
 			<string>storage.type.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>and=|or=|!|%|&amp;|\^|\*|\/|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\?|\||\|\||\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|\^=|\b(?&lt;![\.\$])(instanceof|new|delete|typeof|and|or|is|isnt|not)\b</string>
+			<string>and=|or=|!|%|&amp;|\^|\*|\/|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\?|\||\|\||\:|\*=|(?&lt;!\()/=|%=|\+=|\-=|&amp;=|\^=|\b(?&lt;![\.\$])(?i:and|or|not)\b</string>
 			<key>name</key>
 			<string>keyword.operator.x3</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>[A-Z_]+</string>
+			<string>[A-Za-z_][A-Za-z0-9_]*</string>
 			<key>name</key>
 			<string>variable.other.x3</string>
 		</dict>
